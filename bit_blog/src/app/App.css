@@ -55,3 +55,16 @@ nav, footer{
   padding-bottom: 20px;
 }
 
+.author{
+  margin: 40px;
+  text-align: left;
+  border-bottom: 1px solid rgb(212, 130, 157);
+  padding-bottom: 20px;
+  font-size: 1.3em;
+}
+
+#aboutPar{
+  margin-bottom: 70px;
+}
+
+
