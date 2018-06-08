@@ -6,7 +6,7 @@ class AuthorsPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            authors: []
+            authors: [],
         }
     }
 

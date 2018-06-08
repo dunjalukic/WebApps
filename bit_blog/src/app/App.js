@@ -6,6 +6,7 @@ import Footer from './partials/Footer'
 import AboutPage from './about/AboutPage'
 import HomePage from './home/HomePage'
 import AuthorsPage from './authors/AuthorsPage'
+// import AuthorDetailsPage from './authors/AuthorDetailsPage'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route exact path='/' component={HomePage} />
           <Route path='/about' component={AboutPage} />
           <Route path='/authors' component={AuthorsPage} />
+          {/* <Route path='/authors/:id' component={AuthorDetailsPage} /> */}
         </Switch>
         <Footer />
       </div>
