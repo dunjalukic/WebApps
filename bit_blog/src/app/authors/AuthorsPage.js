@@ -10,23 +10,19 @@ class AuthorsPage extends Component {
         }
     }
 
-    loadAuthors() {
+    componentDidMount() {
         authorsService.getAuthors()
-            .then((authors) => {
+            .then(authors => {
                 this.setState({
                     authors: authors
                 })
             })
     }
 
-    componentDidMount() {
-        this.loadAuthors();
-    }
-
     render() {
         return (
             <div className="container" className="centeredText">
-                <h3>AUTHORS</h3>
+                <h3>AUTHORS ({this.state.authors.length})</h3>
                 <AuthorList authors={this.state.authors} />
             </div>
         );

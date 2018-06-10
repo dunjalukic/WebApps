@@ -2,32 +2,35 @@ import React, { Component } from 'react';
 import AuthorName from './AuthorName';
 import AuthorAddress from './AuthorAddress';
 import AuthorCompany from './AuthorCompany';
+import authorsService from '../../services/authorsService'
+import { Link } from 'react-router-dom';
 
 class AuthorDetailsPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            posts: []
+            author: {}
         }
     }
 
-    loadPosts() {
-        postsService.getPosts()
-            .then((posts) => {
+    componentDidMount() {
+        authorsService.getAuthorDetails(this.props.match.params.id)
+            .then(author => {
                 this.setState({
-                    posts: posts
+                    author: author
                 })
             })
-    }
-
-    componentDidMount() {
-        this.loadPosts();
     }
 
     render() {
         return (
             <div className="container" className="centeredText">
-                <AuthorName />
+                <AuthorName
+                    name={this.state.author.name}
+                    userName={this.state.author.username}
+                    email={this.state.author.email}
+                    phone={this.state.author.phone}
+                />
                 <AuthorAddress />
                 <AuthorCompany />
             </div>

@@ -326,6 +326,13 @@ autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
+avataaars@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/avataaars/-/avataaars-1.1.0.tgz#257f3b868b0f1868ebce256956ea8ed3c01a054c"
+  dependencies:
+    lodash "^4.17.4"
+    prop-types "^15.6.0"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
