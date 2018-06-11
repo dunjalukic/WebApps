@@ -9,7 +9,10 @@ class AuthorDetailsPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            author: {}
+            author: {
+                address: {},
+                company: {}
+            }
         }
     }
 
@@ -24,17 +27,24 @@ class AuthorDetailsPage extends Component {
 
     render() {
         return (
-            <div className="container" className="centeredText">
+            <div className="container centeredText">
+                <span><Link to='/authors'>List of all Authors</Link></span>
                 <AuthorName
                     name={this.state.author.name}
                     userName={this.state.author.username}
                     email={this.state.author.email}
                     phone={this.state.author.phone}
                 />
-                <AuthorAddress />
-                <AuthorCompany />
+                <AuthorAddress
+                    street={this.state.author.address.street}
+                    city={this.state.author.address.city}
+                    zip={this.state.author.address.zipcode}
+                />
+                <AuthorCompany
+                    companyName={this.state.author.company.name}
+                    slogan={this.state.author.company.catchPhrase}
+                />
             </div>
-
         );
     }
 }

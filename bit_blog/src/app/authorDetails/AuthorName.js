@@ -3,13 +3,13 @@ import React from 'react';
 const AuthorName = (props) => {
     return (
         <div>
-            <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Brown'
+            <img className="authorImages" src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Brown'
             />
-            <div>
-                <p>{props.name}</p>
-                <p>{props.userName}</p>
-                <p>{props.email}</p>
-                <p>{props.phone}</p>
+            <div className="authorDetailsDivs">
+                <h2>{props.name}</h2>
+                <p>username: {props.userName}</p>
+                <p>email: {props.email}</p>
+                <p>phone: {props.phone}</p>
             </div>
         </div>
     )
