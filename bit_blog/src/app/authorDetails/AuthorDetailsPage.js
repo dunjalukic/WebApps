@@ -44,7 +44,7 @@ class AuthorDetailsPage extends Component {
                     companyName={this.state.author.company.name}
                     slogan={this.state.author.company.catchPhrase}
                 />
-            </div>
+            </div >
         );
     }
 }

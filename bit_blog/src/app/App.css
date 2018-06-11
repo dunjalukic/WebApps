@@ -80,13 +80,19 @@ nav, footer{
 }
 
 span{
-  display: inline-block;
+  display: block;
   margin: 20px;
+  text-align: left;
 }
 
 #postBody, #postTitle{
   margin-top: 60px;
   padding: 0 30px 20px;
+}
+
+#sameAuthorPosts{
+  padding-left: 30px;
+  text-align: left;
 }
 
 

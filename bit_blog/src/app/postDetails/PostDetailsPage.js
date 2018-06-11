@@ -27,7 +27,7 @@ class PostDetailsPage extends Component {
                 <h2 id="postTitle">{this.state.post.title}</h2>
                 <p id="postBody">{this.state.post.body}</p>
                 <hr />
-                {/* <PostsFromSameAuthor /> */}
+                <PostsFromSameAuthor />
             </div>
         );
     }
