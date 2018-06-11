@@ -84,4 +84,9 @@ span{
   margin: 20px;
 }
 
+#postBody, #postTitle{
+  margin-top: 60px;
+  padding: 0 30px 20px;
+}
+
 
